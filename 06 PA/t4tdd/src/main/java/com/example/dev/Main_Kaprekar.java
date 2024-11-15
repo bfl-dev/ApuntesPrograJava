@@ -5,14 +5,28 @@ package com.example.dev;
 // -encoding UTF-8 -charset UTF-8 -docencoding UTF-8
 
 
+import java.util.Arrays;
 
 public class Main_Kaprekar {
 
-public static void main(String[] args){
-    System.out.println("Clase Main");
+    public static void main(String[] args){
 
-}
+    }
+    public static int kaprekarOp (int num) {
+        int result = Integer.parseInt(sortAsc(num)) - Integer.parseInt(sortDesc(num));
+        return result;
+    }
+    public static String sortDesc(int num){
+        String stringNum = Integer.toString(num);
+        char[] numArray = stringNum.toCharArray();
+        Arrays.sort(numArray);
+        return String.valueOf(numArray);
+    }
+    public static String sortAsc(int num){
+        return new StringBuilder(sortDesc(num)).reverse().toString();
+    }
 
-//aquí van sus funciones:
-
+    public static int itKaprekar(int num){
+        return 0;
+    }
 }
