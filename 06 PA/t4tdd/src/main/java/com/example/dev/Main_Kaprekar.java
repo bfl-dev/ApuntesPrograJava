@@ -25,8 +25,13 @@ public class Main_Kaprekar {
         return new StringBuilder(sortDesc(num)).reverse().toString();
     }
 
-
     public static int itKaprekar(int num){
-        return 3;
+        int iter = 0;
+        while (num != 6174){
+            num = kaprekarOp(num);
+            iter++;
+            if (num==0)break;
+        }
+        return iter;
     }
 }
