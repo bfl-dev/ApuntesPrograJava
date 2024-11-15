@@ -29,8 +29,10 @@ public class Main_Kaprekar {
         int iter = 0;
         while (num != 6174){
             num = kaprekarOp(num);
+            if (Integer.toString(num).length() <= 3) {
+                num = Integer.parseInt((Integer.toString(num)+0));
+            }
             iter++;
-            if (num==0)break;
         }
         return iter;
     }
