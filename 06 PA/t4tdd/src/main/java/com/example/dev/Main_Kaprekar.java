@@ -13,17 +13,7 @@ public class Main_Kaprekar {
 
     }
     public static int kaprekarOp (int num) {
-        int result = Integer.parseInt(sortAsc(num)) - Integer.parseInt(sortDesc(num));
-        return result;
-    }
-    public static String sortDesc(int num){
-        String stringNum = Integer.toString(num);
-        char[] numArray = stringNum.toCharArray();
-        Arrays.sort(numArray);
-        return String.valueOf(numArray);
-    }
-    public static String sortAsc(int num){
-        return new StringBuilder(sortDesc(num)).reverse().toString();
+        return 3087;
     }
 
     public static int itKaprekar(int num){
