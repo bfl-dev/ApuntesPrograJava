@@ -15,6 +15,7 @@ public class Main_Kaprekar {
     public static int kaprekarOp(int num){
         return num == 3524? 3087 : num == 1000? 999 : 1;
     }
+
     public static int itKaprekar(int num){
         return 0;
     }
